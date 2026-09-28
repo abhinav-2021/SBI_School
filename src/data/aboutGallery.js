@@ -1,0 +1,190 @@
+export const aboutGalleryCategories = [
+  "All",
+  "Campus & Grounds",
+  "Sports & Athletics",
+  "Faculty & Leadership",
+  "Events & Celebrations"
+];
+
+export const aboutGalleryItems = [
+  {
+    id: "campus-aerial",
+    title: "Panoramic Aerial View of School Campus",
+    category: "Campus & Grounds",
+    tag: "Aerial Drone Shot",
+    image: "/images/about-gallery/aerial-campus-view.jpeg",
+    thumbnail: "/images/about-gallery/aerial-campus-view.jpeg",
+    description: "Wide aerial drone view showcasing Saint Brahmanand International School, expansive sports grounds, lush green lawns, academic block, and serene surroundings in Mundri (Kaithal).",
+    aspect: "panorama",
+    featured: true,
+    location: "Campus Grounds, Mundri"
+  },
+  {
+    id: "main-building",
+    title: "Main Academic Building & Entrance",
+    category: "Campus & Grounds",
+    tag: "Main Wing",
+    image: "/images/about-gallery/main-building-front.png",
+    thumbnail: "/images/about-gallery/main-building-front.png",
+    description: "Front facade and entrance of S.B.I. School with paved avenue, verdant trees, and ventilated classroom blocks.",
+    aspect: "wide",
+    featured: true,
+    location: "Main Entrance"
+  },
+  {
+    id: "staff-group",
+    title: "Faculty, Administrative Leadership & Staff",
+    category: "Faculty & Leadership",
+    tag: "Management & Staff",
+    image: "/images/about-gallery/staff-group-photo.jpg",
+    thumbnail: "/images/about-gallery/staff-group-photo.jpg",
+    description: "Our dedicated teaching staff, principal, school management, and support teams gathered together in front of the school pavilion.",
+    aspect: "wide",
+    featured: true,
+    location: "School Pavilion"
+  },
+  {
+    id: "campus-assembly",
+    title: "Campus Assembly Grounds & Student Drill",
+    category: "Campus & Grounds",
+    tag: "Assembly Grounds",
+    image: "/images/about-gallery/campus-lawn-flags.jpeg",
+    thumbnail: "/images/about-gallery/campus-lawn-flags.jpeg",
+    description: "Expansive front lawn during morning assembly and house parade, flanked by colorful student house flags under blue skies.",
+    aspect: "wide",
+    featured: false,
+    location: "Central Lawn"
+  },
+  {
+    id: "volleyball-sports",
+    title: "Volleyball Court & Outdoor Athletic Coaching",
+    category: "Sports & Athletics",
+    tag: "Athletics & Sports",
+    image: "/images/about-gallery/volleyball-court-sports.png",
+    thumbnail: "/images/about-gallery/volleyball-court-sports.png",
+    description: "Overhead view of students engaged in volleyball drill and physical training with the sports instructor on the grass court.",
+    aspect: "wide",
+    featured: false,
+    location: "Sports Field"
+  },
+  {
+    id: "children-playground",
+    title: "Junior Playground & Activity Equipment",
+    category: "Sports & Athletics",
+    tag: "Recreation Park",
+    image: "/images/about-gallery/children-playground.jpeg",
+    thumbnail: "/images/about-gallery/children-playground.jpeg",
+    description: "Colorful junior play area equipped with safe swings, roundabout merry-go-round, slides, see-saws, and jungle gyms.",
+    aspect: "standard",
+    featured: false,
+    location: "Children's Park"
+  },
+  {
+    id: "sports-field-flags",
+    title: "Inter-House Sports Field & Tournament Ground",
+    category: "Sports & Athletics",
+    tag: "Sports Arena",
+    image: "/images/about-gallery/sports-field-flags.jpeg",
+    thumbnail: "/images/about-gallery/sports-field-flags.jpeg",
+    description: "Open athletic field with house banners and flags prepared for sports competitions and outdoor tournaments.",
+    aspect: "standard",
+    featured: false,
+    location: "Main Ground"
+  },
+  {
+    id: "faculty-celebration",
+    title: "Faculty Honors & Cultural Milestone Celebration",
+    category: "Events & Celebrations",
+    tag: "School Function",
+    image: "/images/about-gallery/faculty-celebration.jpeg",
+    thumbnail: "/images/about-gallery/faculty-celebration.jpeg",
+    description: "Teachers and educators celebrating school milestones, student academic achievements, and annual celebrations.",
+    aspect: "wide",
+    featured: false,
+    location: "Activity Hall"
+  },
+  {
+    id: "teaching-staff-lawn",
+    title: "Academic Teaching Faculty",
+    category: "Faculty & Leadership",
+    tag: "Teaching Faculty",
+    image: "/images/about-gallery/teaching-staff-lawn.jpeg",
+    thumbnail: "/images/about-gallery/teaching-staff-lawn.jpeg",
+    description: "Subject matter teachers and instructors responsible for student guidance across primary, middle, and senior secondary grades.",
+    aspect: "wide",
+    featured: false,
+    location: "Academic Lawn"
+  },
+  {
+    id: "principal-office",
+    title: "Principal & Administrative Conference Office",
+    category: "Campus & Grounds",
+    tag: "Administration",
+    image: "/images/about-gallery/principal-office.jpeg",
+    thumbnail: "/images/about-gallery/principal-office.jpeg",
+    description: "Air-conditioned administrative consultation suite for parents, teacher meetings, and academic leadership counseling.",
+    aspect: "standard",
+    featured: false,
+    location: "Administrative Block"
+  },
+  {
+    id: "campus-walkway",
+    title: "Paved Campus Walkway & Shaded Gardens",
+    category: "Campus & Grounds",
+    tag: "Campus Greenery",
+    image: "/images/about-gallery/campus-walkway.jpeg",
+    thumbnail: "/images/about-gallery/campus-walkway.jpeg",
+    description: "Tree-shaded interlock tiled pathway adorned with house flags and landscaped flower beds providing a peaceful environment.",
+    aspect: "tall",
+    featured: false,
+    location: "Main Walkway"
+  },
+  {
+    id: "tree-lined-pathway",
+    title: "Tree-Lined Approach to Main Building",
+    category: "Campus & Grounds",
+    tag: "Flora & Walkways",
+    image: "/images/about-gallery/tree-lined-pathway.jpeg",
+    thumbnail: "/images/about-gallery/tree-lined-pathway.jpeg",
+    description: "Lush botanical avenue leading towards the central school building and classrooms.",
+    aspect: "wide",
+    featured: false,
+    location: "Garden Pathway"
+  },
+  {
+    id: "admin-wing-gardens",
+    title: "Two-Storey Administrative Wing & Lawns",
+    category: "Campus & Grounds",
+    tag: "Infrastructure",
+    image: "/images/about-gallery/admin-wing-gardens.jpeg",
+    thumbnail: "/images/about-gallery/admin-wing-gardens.jpeg",
+    description: "Two-tier administrative block bordered by evergreen palms, manicured hedges, and flowering flora.",
+    aspect: "wide",
+    featured: false,
+    location: "Administrative Wing"
+  },
+  {
+    id: "campus-lawns-buses",
+    title: "Campus Lawns & School Bus Transport Fleet",
+    category: "Campus & Grounds",
+    tag: "Transport & Safety",
+    image: "/images/about-gallery/campus-lawns-buses.jpeg",
+    thumbnail: "/images/about-gallery/campus-lawns-buses.jpeg",
+    description: "Spacious green campus boundary and school bus fleet providing safe and reliable transportation for students.",
+    aspect: "wide",
+    featured: false,
+    location: "Transport Bay & Lawn"
+  },
+  {
+    id: "classrooms-wing-lawn",
+    title: "Classroom Wing & Ventilated Corridors",
+    category: "Campus & Grounds",
+    tag: "Classrooms",
+    image: "/images/about-gallery/classrooms-wing-lawn.jpeg",
+    thumbnail: "/images/about-gallery/classrooms-wing-lawn.jpeg",
+    description: "Spacious single-storey academic wing with wide breezy verandas facing open natural green playgrounds.",
+    aspect: "wide",
+    featured: false,
+    location: "Academic Wing"
+  }
+];
