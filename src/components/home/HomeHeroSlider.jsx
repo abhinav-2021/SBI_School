@@ -8,12 +8,13 @@ export function HomeHeroSlider() {
     {
       id: 1,
       image: "/images/hero/hero-campus-main.jpg",
-      badge: "Nur. to 10+2",
+      badge: "CBSE Affiliated • Nur. to 10+2",
       headline: "S.B.I. School, Mundri",
-      description: "Permanent Recognised school in Mundri (Kaithal) offering education from Nursery to 10+2.",
-      primaryCta: { text: "About Us", link: "/about" },
-      secondaryCta: { text: "Streams", link: "/streams" },
-      imagePosition: "object-[center_35%]"
+      description: "Permanent Recognised school in Mundri (Kaithal) offering quality education with spacious green campus, modern laboratories, and sports grounds.",
+      primaryCta: { text: "About School", link: "/about" },
+      secondaryCta: { text: "Our Streams", link: "/streams" },
+      imagePosition: "object-[center_45%]",
+      contentAlign: "right"
     },
     {
       id: 2,
@@ -23,7 +24,8 @@ export function HomeHeroSlider() {
       description: "Equipped Physics, Chemistry, and Biology labs for practical experiments.",
       primaryCta: { text: "View Streams", link: "/streams" },
       secondaryCta: { text: "Contact Us", link: "/contact" },
-      imagePosition: "object-[center_40%]"
+      imagePosition: "object-[center_40%]",
+      contentAlign: "left"
     },
     {
       id: 3,
@@ -33,12 +35,13 @@ export function HomeHeroSlider() {
       description: "Airy classrooms and dedicated study spaces designed for focused learning.",
       primaryCta: { text: "Downloads", link: "/documents" },
       secondaryCta: { text: "Contact Us", link: "/contact" },
-      imagePosition: "object-center"
+      imagePosition: "object-center",
+      contentAlign: "left"
     }
   ];
 
   return (
-    <section className="relative w-full aspect-[16/9] min-h-[440px] max-h-[640px] lg:max-h-[680px] bg-school-primary-dark overflow-hidden">
+    <section className="relative w-full aspect-[16/9] min-h-[480px] sm:min-h-[520px] md:min-h-[560px] max-h-[640px] lg:max-h-[680px] bg-school-primary-dark overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         effect="fade"
@@ -65,15 +68,28 @@ export function HomeHeroSlider() {
                 alt={slide.headline}
                 className={`w-full h-full object-cover ${slide.imagePosition || 'object-center'}`}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-school-primary-dark/95 via-school-primary-dark/70 md:via-school-primary-dark/45 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-t from-school-primary-dark/80 via-transparent to-black/20" />
+              {slide.contentAlign === 'right' ? (
+                <>
+                  {/* Subtle overall dark scrim so contrast is uniform */}
+                  <div className="absolute inset-0 bg-school-primary-dark/25" />
+                  {/* Right side gradient for text legibility, keeping left building signboard fully visible */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-school-primary-dark/85 via-transparent to-black/25" />
+                  <div className="hidden md:block absolute inset-0 bg-gradient-to-l from-school-primary-dark/90 via-school-primary-dark/55 to-transparent" />
+                  <div className="md:hidden absolute inset-0 bg-school-primary-dark/65" />
+                </>
+              ) : (
+                <>
+                  <div className="absolute inset-0 bg-gradient-to-r from-school-primary-dark/95 via-school-primary-dark/70 md:via-school-primary-dark/45 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-school-primary-dark/80 via-transparent to-black/20" />
+                </>
+              )}
             </div>
 
             {/* Slide Content */}
-            <div className="relative z-10 max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
-              <div className="max-w-xl">
+            <div className={`relative z-10 max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col justify-center ${slide.contentAlign === 'right' ? 'items-end' : 'items-start'}`}>
+              <div className={`max-w-xl w-full ${slide.contentAlign === 'right' ? 'md:bg-school-primary-dark/70 md:backdrop-blur-md md:p-8 md:rounded-2xl md:border md:border-white/15 md:shadow-2xl' : ''}`}>
                 {/* Badge */}
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-school-accent/20 text-school-accent border border-school-accent/40 backdrop-blur-md mb-4">
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-school-accent/20 text-school-accent border border-school-accent/40 backdrop-blur-md mb-3.5">
                   {slide.badge}
                 </span>
 
@@ -115,3 +131,4 @@ export function HomeHeroSlider() {
 }
 
 export default HomeHeroSlider;
+

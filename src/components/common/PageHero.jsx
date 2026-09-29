@@ -16,7 +16,7 @@ export function PageHero({
         <img
           src={backgroundImage}
           alt={title}
-          className="w-full h-full object-cover object-[center_35%]"
+          className="w-full h-full object-cover object-[center_45%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-school-primary-dark/95 via-school-primary-dark/85 to-school-primary-dark/70" />
       </div>

@@ -18,16 +18,26 @@ export function HomeWelcome() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
             className="lg:col-span-6 relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-soft border-4 border-slate-100 aspect-[16/10] bg-slate-100">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border-4 border-slate-100/90 aspect-[4/3] bg-slate-100 group">
               <img
                 src="/images/hero/hero-campus-main.jpg"
                 alt="S.B.I. School Mundri Campus"
-                className="w-full h-full object-cover object-[center_35%]"
+                className="w-full h-full object-cover object-[center_42%] transition-transform duration-500 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+              
+              {/* Clean campus photo badge */}
+              <div className="absolute bottom-3.5 left-3.5 bg-school-primary-dark/90 backdrop-blur-md text-white px-3.5 py-2 rounded-xl border border-white/20 shadow-md flex items-center gap-2.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                <div className="text-left">
+                  <p className="text-xs font-bold text-white tracking-wide leading-tight">School Campus & Play Grounds</p>
+                  <p className="text-[10px] text-slate-300 leading-tight">Mundri (Kaithal)</p>
+                </div>
+              </div>
             </div>
           </motion.div>
 
